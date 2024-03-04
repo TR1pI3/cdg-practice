@@ -1,8 +1,8 @@
 def exponentiation_or_revert(word)
   if word.downcase.end_with?('cs')
-    puts 2 ** word.length
+    2**word.length
   else
-    puts word.reverse
+    word.reverse
   end
 end
 
@@ -15,7 +15,7 @@ def add_pokemon
     user_input_pokemon_name = gets.chomp
     puts 'Какого цвета покемон?'
     user_input_color = gets.chomp
-    array << {name: user_input_pokemon_name, color: user_input_color}
+    array << { name: user_input_pokemon_name, color: user_input_color }
   end
-  puts array
+  array
 end
